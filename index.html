@@ -3,17 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Âress | Sanal</title>
+    <title>ÂRESS | OFFICIAL</title>
     <style>
-        body { background-color: #000; color: #0f0; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .box { border: 1px solid #0f0; padding: 20px; text-align: center; box-shadow: 0 0 15px #0f0; }
-        h1 { font-size: 30px; text-transform: uppercase; }
+        /* Arka Plan ve Genel Tema */
+        body {
+            background-color: #050505;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* 3D Hareketli Başlık */
+        .header-3d {
+            font-size: 80px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ff0000;
+            text-shadow: 
+                0 1px 0 #880000,
+                0 2px 0 #770000,
+                0 3px 0 #660000,
+                0 4px 0 #550000,
+                0 5px 10px rgba(255,0,0,0.5);
+            letter-spacing: 10px;
+            transform: skewY(-5deg);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Bilgi Kutusu */
+        .info-card {
+            background: rgba(20, 20, 20, 0.9);
+            border: 2px solid #ff0000;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            margin-top: 50px;
+        }
+
+        .info-card h2 {
+            color: #ff0000;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        /* Animasyon */
+        @keyframes float {
+            0%, 100% { transform: translateY(0) skewY(-5deg); }
+            50% { transform: translateY(-20px) skewY(-5deg); }
+        }
+
+        /* Neon Çizgi */
+        .neon-line {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ff0000, transparent);
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Âress Sanal Dünyasına Hoş Geldiniz</h1>
-        <p>Bu site düşmez, vurulmaz.</p>
+
+    <div class="header-3d">ÂRESS</div>
+    
+    <div class="neon-line"></div>
+
+    <div class="info-card">
+        <h2>Sanalın Zirvesi</h2>
+        <p>
+            Teknoloji ve donanım dünyasında sınırları zorlayan, 
+            RTX serisi performansından ağ güvenliğine kadar her alanda 
+            iz bırakan dijital kimlik.
+        </p>
+        <p><strong>Status:</strong> <span style="color: #0f0;">Online / Protected</span></p>
     </div>
+
 </body>
 </html>
